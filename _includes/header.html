@@ -1,0 +1,11 @@
+<head>
+	<title>{% if page.title %}{{ page.title }} :: {% endif %}OOPP</title>
+  
+	<link rel="shortcut icon" href="{{site.baseurl}}/images/favicon.ico" type="image/x-icon" />
+  	<link rel="stylesheet" href="{{site.baseurl}}/css/reset.css"/>
+  	<link rel="stylesheet" href="{{site.baseurl}}/css/default.css"/>
+
+	{% assign url_parts = {{page.url | split:"/" }} %}
+	{% capture url_parts_size %}{{ url_parts | size }}{% endcapture %}
+
+</head>

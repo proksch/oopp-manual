@@ -1,0 +1,55 @@
+<h1>OOPP Manual</h1>
+
+<ul>
+	{% for p in site.pages %}
+		{% assign cur_depth = p.url | split:"/" | size %}
+		{% if cur_depth == 0 %}
+		<li>
+		    <a href="{{site.baseurl}}{{ p.url }}">{% if p.short-title %}{{ p.short-title }}{%else%}{{ p.title }}{%endif%}</a>
+		</li>
+		{% endif %}
+	{% endfor %}
+
+	{% for p in site.pages %}
+		{% assign url1 = p.url | split:"/" | join:"/"%}
+		{% assign depth = p.url | split:"/" | size %}
+		{% if depth == 2 %}
+		<li>
+		    <a href="{{site.baseurl}}{{ p.url }}">{% if p.short-title %}{{ p.short-title }}{%else%}{{ p.title }}{%endif%}</a>
+
+		    <ul>
+			{% for p in site.pages %}
+				{% assign depth = p.url | split:"/" | size %}
+				{% if depth == 3 %}
+					{% assign url2 = p.url | split:"/" | join:"/" %}
+					{% assign url2_parent = p.url | split:"/" | pop | join:"/" %}
+					{% if url1 == url2_parent %}
+					<li>	
+			    		<a href="{{site.baseurl}}{{ p.url }}">{% if p.short-title %}{{ p.short-title }}{%else%}{{ p.title }}{%endif%}</a>
+
+			    		<ul>
+						{% for p in site.pages %}
+							{% assign depth = p.url | split:"/" | size %}
+							{% if depth == 4 %}
+								{% assign url3 = p.url | split:"/" | join:"/" %}
+								{% assign url3_parent = p.url | split:"/" | pop | join:"/" %}
+								{% if url2 == url3_parent %}
+								<li>	
+						    		<a href="{{site.baseurl}}{{ p.url }}">{% if p.short-title %}{{ p.short-title }}{%else%}{{ p.title }}{%endif%}</a>
+
+
+						    		
+								</li>
+								{% endif %}
+							{% endif %}
+						{% endfor %}
+						</ul>
+					</li>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		    </ul>
+		</li>
+		{% endif %}
+	{% endfor %}
+</ul>

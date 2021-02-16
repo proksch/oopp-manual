@@ -1,0 +1,11 @@
+# Site settings
+baseurl: "/oopp-manual"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+
+permalink: :categories/:year/:title/
+
+exclude: [ LICENSE, README.md ]
