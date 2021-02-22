@@ -93,6 +93,10 @@ body {
 	margin: 6px 0 6px 20px;
 }
 
+.main ul li {
+	margin: 0 0 0 20px;
+}
+
 .main dt:before {
   content: "";
   display: block;
