@@ -66,4 +66,18 @@ Sufficient
 Excellent
 :	Failing builds on all branches have directly been fixed.
 
+## Group strives to produce code with style and structure
 
+Sufficient
+: Outsiders of the project are able to understand the code base. Most classes have a reasonable size and are distributed into meaningful packages that communicate the corresponding system part. Style violations that are reported by the build server get eventually fixed.
+
+Excellent
+: The code is easy to understand for outsiders. Most classes and especially interfaces are well commented, the overall system has a clear design that immediate stands out when inspecting the code base, and the package structure makes it trivial to navigate to the right source code. The group has chosen meaningful names for most elements (classes, field, methods, variables, ...). Style violations that are reported by the build server get immediately fixed.
+
+## The resulting code has been tested
+
+Sufficient
+: Basic tests exist that cover the most important/critical parts of the system. Parts that are hard to test, like the UI, are not covered by the automated unit tests and are left for manual testing. Testing related build failures get eventually fixed.
+
+Excellent
+: Integration tests get broken down into unit tests for the individual components in most parts of the system, especially for the REST API. Also substantial parts in the front-end are tested. For the parts that are hard to test, concrete test plans exist that describe the manual steps to be executed. Testing related build failures get immediately fixed.
