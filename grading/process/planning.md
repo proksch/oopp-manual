@@ -8,7 +8,7 @@ short-title: Planning
 
 Sufficient
 : High-level features are broken down into smaller, more manageable pieces that can be finished by a single developer.
-Several all tasks are not precisely defined and contain no or ambiguous descriptions for what to do and when to stop.
+Several tasks are not precisely defined and contain no or ambiguous descriptions for what to do and when to stop.
 
 Excellent
 : Most tasks are well defined and clearly describe the expected outcome and when they are done. Tasks are typically small enough that it does not take longer than a day to finish them.

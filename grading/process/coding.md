@@ -7,8 +7,7 @@ short-title: Coding
 ## Group has been working continuously on the project
 
 Sufficient
-:	Work on the project has been spread over the whole course.
-	Every team member has contributed at least one substantial and meaningful commit per week.
+:	Work on the project has been spread over the whole course. Every team member has committed multiple times each week and the commit has a reasonable size that translates to the individually expected workload.
 
 Excellent
 :	All team members have code contributions throughout most of the course.
@@ -29,10 +28,10 @@ Excellent
 ## The group has used feature branches or merge requests to isolate individual features during development.
 
 Sufficient
-: The group has used feature branches or merge request from external repositories for important contributions.
+: The group has used feature branches or merge request for important contributions.
 
 Excellent
-: Most work has been performed in feature branches or external repositories.
+: Most work has been performed in feature branches or merge requests.
 
 ## Isolated feature branches or merge requests have been merged back into the main development line timely.
 
